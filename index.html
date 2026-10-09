@@ -31,6 +31,7 @@ details[open] .caret{transform:rotate(180deg)}
 .topbar.hide{transform:translateY(-100%);opacity:0;pointer-events:none}
 .intro-pin{position:relative;min-height:100vh;min-height:100svh;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;padding:96px 24px;text-align:center;transition:background-color 700ms cubic-bezier(0.32,0.72,0,1),color 700ms cubic-bezier(0.32,0.72,0,1)}
 .intro-logos{display:flex;align-items:center;gap:12px}
+.intro-logos img{filter:drop-shadow(1.5px 0 0 #ffffff) drop-shadow(-1.5px 0 0 #ffffff) drop-shadow(0 1.5px 0 #ffffff) drop-shadow(0 -1.5px 0 #ffffff)}
 .intro-slides{width:100%;max-width:448px;display:flex;flex-direction:column;gap:24px}
 .intro-t{margin:0;font-size:30px;line-height:36px;font-weight:800;text-wrap:balance}
 .intro.on .intro-slides{display:grid}
@@ -44,6 +45,8 @@ details[open] .caret{transform:rotate(180deg)}
 .intro-hint svg{animation:nudge 1600ms cubic-bezier(0.32,0.72,0,1) infinite}
 @keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
 @media (prefers-reduced-motion: reduce){.intro-hint svg{animation:none}}
+.on-dark .st-t{color:#D1D5DB}
+.on-light .st-t{color:inherit}
 .js [data-reveal]{opacity:0;transform:translateY(64px);filter:blur(12px)}
 .js [data-reveal].in{opacity:1;transform:none;filter:none}
 .w{color:rgba(255,255,255,0.3);transition:color 700ms cubic-bezier(0.32,0.72,0,1)}
@@ -83,23 +86,16 @@ details[open] .caret{transform:rotate(180deg)}
 
 <!-- HERO -->
 <section data-reveal="hero" style="padding: 64px max(16px, calc(50% - 224px)) 48px; display: flex; flex-direction: column; gap: 24px; transition: opacity 900ms cubic-bezier(0.32,0.72,0,1), transform 900ms cubic-bezier(0.32,0.72,0,1), filter 900ms cubic-bezier(0.32,0.72,0,1)">
-<p style="font-size: 14px; line-height: 20px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #1e3a8a">Khusus untuk kamu yang sudah tes STIFIn</p>
+<p style="font-size: 14px; line-height: 20px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #1e3a8a">Khusus untuk kamu yang sudah tes <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span></p>
 <h1 style="max-width: 680px; font-size: 30px; line-height: 36px; font-weight: 800; background: linear-gradient(90deg, #000000, #666666); -webkit-background-clip: text; background-clip: text; color: transparent">Pengen kerja yang<br>terasa "gue banget",<br>tapi masih bingung<br>profesi apa yang cocok?</h1>
-<p style="max-width: 680px; font-size: 18px; line-height: 28px">Kenali potensi, cara kerja, dan passion bawaan Mesin Kecerdasan kamu.<br>Lalu temukan profesi yang pas, lewat webinar dan ebook.</p>
 <div style="display: flex; flex-direction: column; gap: 12px; ">
-<p style="font-weight: 600">Mulai 99 rb. Paket webinar + ebook cukup 147 rb.</p>
 <a class="cta" href="#daftar" style="align-self: flex-end; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 12px; border-radius: 8px; background: #ffa200; color: #1a1a1a; font-size: 16px; line-height: 24px; font-weight: 600; text-decoration: none">Checkout sekarang</a>
-<p style="font-size: 14px; line-height: 20px">Dibawakan Monde Ariezta, Licensed STIFIn Trainer, praktisi STIFIn sejak 2013.</p>
-</div>
-<div role="img" aria-label="Banner program Find Your Job From Heaven untuk semua Mesin Kecerdasan STIFIn" style="margin-top: 16px; background: #181818; border-radius: 16px; padding: 32px 24px; display: flex; flex-direction: column; gap: 8px">
-<p style="color: #ffffff; font-size: 30px; line-height: 36px; font-weight: 800; letter-spacing: 0.02em">FIND YOUR JOB FROM HEAVEN</p>
-<p style="color: #ffffff; font-size: 14px; line-height: 20px; font-weight: 700; letter-spacing: 0.12em"><span style="color: #F0444B">SENSING</span> · <span style="color: #ffffff">THINKING</span> · <span style="color: #4C9AFF">INTUITING</span> · <span style="color: #2DBE5C">FEELING</span> · <span style="color: #FFC20E">INSTING</span></p>
-<p style="color: #ffffff; font-size: 16px; line-height: 24px">Temukan profesi terbaik sesuai dengan Personal Genetik kamu</p>
+<p style="font-size: 14px; line-height: 20px">Dibawakan Monde Ariezta, Licensed <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span> Trainer, praktisi <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span> sejak 2013.</p>
 </div>
 </section>
 
 <!-- SOCIAL PROOF -->
-<section data-reveal="proof" style="padding: 64px max(16px, calc(50% - 224px)); background: #f5f7fb; display: flex; flex-direction: column; gap: 16px; transition: opacity 900ms cubic-bezier(0.32,0.72,0,1), transform 900ms cubic-bezier(0.32,0.72,0,1), filter 900ms cubic-bezier(0.32,0.72,0,1)">
+<section data-reveal="proof" style="padding: 64px max(16px, calc(50% - 224px)); background: #f5f7fb; display: none; flex-direction: column; gap: 16px; transition: opacity 900ms cubic-bezier(0.32,0.72,0,1), transform 900ms cubic-bezier(0.32,0.72,0,1), filter 900ms cubic-bezier(0.32,0.72,0,1)">
 <h2 style="font-size: 24px; line-height: 32px; font-weight: 800">💬 Kata mereka yang sudah merasakan</h2>
 <div role="img" aria-label="Tempat foto testimoni" style="border: 1px solid #e5e7eb; border-radius: 12px; min-height: 240px; padding: 24px; box-sizing: border-box; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center"><img src="assets/testimoni.jpg" alt="Testimoni peserta" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">
 <p style="font-weight: 600">[Foto testimoni asli, dengan wajah]</p>
@@ -108,8 +104,8 @@ details[open] .caret{transform:rotate(180deg)}
 </section>
 
 <!-- PROBLEM TO SOLUTION -->
-<section data-reveal="problem" style="padding: 64px max(16px, calc(50% - 224px)); background: #181818; color: #ffffff; display: flex; flex-direction: column; gap: 24px; transition: opacity 900ms cubic-bezier(0.32,0.72,0,1), transform 900ms cubic-bezier(0.32,0.72,0,1), filter 900ms cubic-bezier(0.32,0.72,0,1)">
-<p style="font-size: 20px; line-height: 28px; font-weight: 600">Bayangkan sebuah Senin pagi.</p>
+<section data-reveal="problem" class="on-dark" style="padding: 64px max(16px, calc(50% - 224px)); background: #181818; color: #ffffff; display: flex; flex-direction: column; gap: 24px; transition: opacity 900ms cubic-bezier(0.32,0.72,0,1), transform 900ms cubic-bezier(0.32,0.72,0,1), filter 900ms cubic-bezier(0.32,0.72,0,1)">
+<p style="font-size: 20px; line-height: 28px; font-weight: 600">⏰ Bayangkan sebuah Senin pagi.</p>
 <p>Alarm berbunyi. Kamu tarik napas panjang, menatap plafon kamar, lalu bergumam, "Hari ini lagi, ya…"</p>
 <p>Pekerjaannya sih bisa kamu kerjakan. Tapi ada yang terasa mengganjal.</p>
 <p>Kemampuanmu seperti tidak terpakai. Aktivitasnya tidak kamu nikmati. Dan makin lama dijalani, bukannya makin nyaman, malah makin berat.</p>
@@ -120,9 +116,9 @@ details[open] .caret{transform:rotate(180deg)}
 <section data-reveal="relate" style="padding: 64px max(16px, calc(50% - 224px)); background: #f5f7fb; display: flex; flex-direction: column; gap: 24px; transition: opacity 900ms cubic-bezier(0.32,0.72,0,1), transform 900ms cubic-bezier(0.32,0.72,0,1), filter 900ms cubic-bezier(0.32,0.72,0,1)">
 <p style="font-weight: 600">Atau mungkin kamu pernah merasakan salah satu dari ini:</p>
 <div style="display: flex; flex-direction: column; gap: 16px">
-<div class="ck"><span aria-hidden="true" style="flex: none">✅</span><p>Sering kepikiran, "sebenarnya profesi apa sih yang paling cocok buat saya?"</p></div>
-<div class="ck"><span aria-hidden="true" style="flex: none">✅</span><p>Kerja tiap hari, tapi rasanya belum sungguh "gue banget"</p></div>
-<div class="ck"><span aria-hidden="true" style="flex: none">✅</span><p>Sudah tahu hasil tes STIFIn, tapi belum tahu cara memakainya untuk karier</p></div>
+<div class="ck"><span aria-hidden="true" style="flex: none">✅</span><p>Sering kepikiran, <em>"sebenarnya <strong>profesi</strong> apa sih yang paling <strong>cocok buat saya</strong>?"</em></p></div>
+<div class="ck"><span aria-hidden="true" style="flex: none">✅</span><p>Kerja tiap hari, tapi rasanya <strong>belum "gue banget"</strong></p></div>
+<div class="ck"><span aria-hidden="true" style="flex: none">✅</span><p>Sudah tahu hasil <strong>tes <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span></strong>, tapi belum tahu cara memakainya <strong>untuk karier</strong></p></div>
 </div>
 <p>Kalau minimal satu jawabannya "iya", <strong>kamu ada di halaman yang tepat.</strong> 👇</p>
 <p style="font-size: 20px; line-height: 28px; font-weight: 600">Kalau boleh memilih, kamu ingin sekadar punya pekerjaan, atau menemukan pekerjaan yang seakan "diciptakan" untuk kamu?</p>
@@ -142,20 +138,25 @@ details[open] .caret{transform:rotate(180deg)}
 <!-- NARASUMBER -->
 <section data-reveal="speaker" style="padding: 64px max(16px, calc(50% - 224px)); background: #f5f7fb; display: flex; flex-direction: column; gap: 24px; transition: opacity 900ms cubic-bezier(0.32,0.72,0,1), transform 900ms cubic-bezier(0.32,0.72,0,1), filter 900ms cubic-bezier(0.32,0.72,0,1)">
 <h2 style="font-size: 24px; line-height: 32px; font-weight: 800">🎤 Narasumber dan penulis ebook</h2>
-<div style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
-<div role="img" aria-label="Tempat foto Monde Ariezta" style="flex: none; width: 128px; height: 128px; border-radius: 8px; background: #f5f7fb; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 14px; line-height: 20px"><img src="assets/narasumber.jpg" alt="Monde Ariezta" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">[Foto]</div>
-<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div class="on-dark" style="background: #181818; color: #ffffff; border-radius: 16px; overflow: hidden">
+<div style="position: relative; min-height: 280px; padding: 24px; box-sizing: border-box; display: flex; align-items: center">
+<img src="assets/narasumber.png" alt="Monde Ariezta" style="position: absolute; right: -24px; bottom: 0; height: 280px; width: auto; display: block; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 30%); mask-image: linear-gradient(90deg, transparent 0%, #000 30%)">
+<div style="position: relative; width: 52%; display: flex; flex-direction: column; gap: 12px">
 <p style="font-size: 20px; line-height: 28px; font-weight: 700">Monde Ariezta</p>
-<p>Licensed STIFIn Promotor dan Licensed STIFIn Trainer.</p>
-<p>13 tahun mendalami STIFIn, sejak 2013.</p>
-<p>Aktif menjadi trainer di berbagai workshop dan webinar STIFIn.</p>
-<p>Penulis Panca Rona, STIFIn Profesi, Era Genetik, Job from Heaven, Wellness Energy, dan STIFIn at Work.</p>
+<span aria-hidden="true" style="display: block; width: 48px; height: 2px; border-radius: 2px; background: rgba(255, 255, 255, 0.6)"></span>
+<p style="font-weight: 700">Licensed <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span> Promotor dan Licensed <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span> Trainer.</p>
+<p><strong>13 tahun</strong> mendalami <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span>, <strong>sejak 2013.</strong></p>
+</div>
+</div>
+<div class="on-light" style="padding: 24px; display: flex; flex-direction: column; gap: 12px; background: #E5E7EB; color: #1a1a1a">
+<p>Aktif menjadi trainer di berbagai workshop dan webinar <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span>.</p>
+<p>Penulis <strong>Panca Rona, <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span> Profesi, Era Genetik, Job from Heaven, Wellness Energy, dan <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span> at Work.</strong></p>
 </div>
 </div>
 </section>
 
 <!-- TAGLINE REVEAL -->
-<section style="padding: 96px max(16px, calc(50% - 224px)); background: #181818">
+<section class="on-dark" style="padding: 96px max(16px, calc(50% - 224px)); background: #181818">
 <p id="tagline-reveal" style="max-width: 680px; font-size: 36px; line-height: 40px; font-weight: 800; text-wrap: balance"><span class="w">Jangan </span><span class="w">cuma </span><span class="w">cari </span><span class="w">pekerjaan. </span><span class="w">Temukan </span><span class="w">pekerjaan </span><span class="w">yang </span><span class="w">terasa </span><span class="w">seperti </span><span class="w">"diciptakan" </span><span class="w">untukmu. </span></p>
 </section>
 
@@ -178,7 +179,7 @@ details[open] .caret{transform:rotate(180deg)}
 <p style="color: #dc2626; font-size: 30px; line-height: 36px; font-weight: 700; text-decoration: line-through">198 rb</p>
 <p style="font-size: 20px; line-height: 28px">147 rb per MK</p>
 </div>
-<div role="img" aria-label="Tempat foto paket yang kamu terima" style="border: 1px solid #e5e7eb; border-radius: 8px; min-height: 160px; padding: 16px; box-sizing: border-box; background: #f5f7fb; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center"><img src="assets/paket.jpg" alt="Paket webinar dan ebook yang kamu terima" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><p style="font-weight: 600">[Foto paket yang kamu terima]</p><p style="font-size: 14px; line-height: 20px">Mockup ebook dan tampilan webinar dalam satu gambar.</p></div>
+<img src="assets/paket.jpg" alt="Paket ebook Job From Heaven dan webinar live via Zoom" style="width: 100%; height: auto; display: block; border-radius: 8px">
 <div class="ck"><span aria-hidden="true" style="flex: none">✅</span><p>Webinar live sesuai Mesin Kecerdasan kamu</p></div>
 <div class="ck"><span aria-hidden="true" style="flex: none">✅</span><p>Ebook Job From Heaven sesuai Personal Genetik kamu</p></div>
 <div class="ck"><span aria-hidden="true" style="flex: none">✅</span><p>Akses ebook seumur hidup</p></div>
@@ -199,7 +200,7 @@ details[open] .caret{transform:rotate(180deg)}
 </section>
 
 <!-- FINAL CTA -->
-<section data-reveal="final" style="padding: 64px max(16px, calc(50% - 224px)) 96px; background: #181818; color: #ffffff; display: flex; flex-direction: column; gap: 24px; transition: opacity 900ms cubic-bezier(0.32,0.72,0,1), transform 900ms cubic-bezier(0.32,0.72,0,1), filter 900ms cubic-bezier(0.32,0.72,0,1)">
+<section data-reveal="final" class="on-dark" style="padding: 64px max(16px, calc(50% - 224px)) 96px; background: #181818; color: #ffffff; display: flex; flex-direction: column; gap: 24px; transition: opacity 900ms cubic-bezier(0.32,0.72,0,1), transform 900ms cubic-bezier(0.32,0.72,0,1), filter 900ms cubic-bezier(0.32,0.72,0,1)">
 <h2 style="max-width: 680px; font-size: 30px; line-height: 36px; font-weight: 800">Pengen kerja yang terasa "gue banget"?<br>Mulai dari Personal Genetik kamu.</h2>
 <div style="display: flex; justify-content: flex-end">
 <a class="cta" href="#daftar" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 12px; border-radius: 8px; background: #ffa200; color: #1a1a1a; font-size: 16px; line-height: 24px; font-weight: 600; text-decoration: none">Checkout sekarang</a>
@@ -210,7 +211,7 @@ details[open] .caret{transform:rotate(180deg)}
 
 <footer style="border-top: 1px solid #e5e7eb">
 <div style="max-width: 480px; margin: 0 auto; padding: 24px 16px; box-sizing: border-box">
-<p style="font-size: 14px; line-height: 20px">© 2026 STIFIn Institute · Find Your Job From Heaven</p>
+<p style="font-size: 14px; line-height: 20px">© 2026 <span style="color: #E3262E">S</span><span class="st-t">T</span><span style="color: #3B82F6">I</span><span style="color: #16A34A">F</span><span style="color: #F28C00">In</span> Institute · Find Your Job From Heaven</p>
 </div>
 </footer>
 </div>

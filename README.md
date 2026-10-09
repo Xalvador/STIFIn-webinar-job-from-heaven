@@ -9,17 +9,15 @@ index.html          Halaman lengkap dalam satu file (gaya, animasi, dan script s
 assets/
   logo-stifin.png   Logo STIFIn Institute
   logo-jfh.png      Logo Job From Heaven (versi mendatar)
+  paket.jpg         Mockup ebook dan webinar
+  narasumber.png    Foto narasumber (latar transparan)
 ```
 
-## Foto yang perlu ditambahkan ke `assets/`
+## Foto
 
-| File | Dipakai untuk |
-|---|---|
-| `testimoni.jpg` | Foto testimoni di bawah hero |
-| `narasumber.jpg` | Foto Monde Ariezta |
-| `paket.jpg` | Foto paket di kartu Webinar + Ebook |
+Sudah terpasang di `assets/`: `paket.jpg` (mockup ebook dan webinar) dan `narasumber.png` (foto Monde Ariezta).
 
-Selama foto belum ada, halaman menampilkan kotak placeholder.
+Belum ada: `testimoni.jpg`. Seksi testimoni saat ini disembunyikan.
 
 ## Yang masih perlu diisi
 
